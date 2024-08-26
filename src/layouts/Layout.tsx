@@ -21,6 +21,9 @@ const Layout = () => {
             >
               Nuevo Producto
             </Link>
+            <Link to="docs" className="text-white hover:text-gray-300">
+              Docs
+            </Link>
             <Link to="contacto" className="text-white hover:text-gray-300">
               Contacto
             </Link>

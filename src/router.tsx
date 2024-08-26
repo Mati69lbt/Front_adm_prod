@@ -15,6 +15,21 @@ import EditProducts, {
 } from "./views/EditProducts";
 import { action as deleteProductAction } from "./components/ProductDetails";
 
+const Docs = () => (
+  <div style={{ width: "100%", height: "100vh" }}>
+    <iframe
+      src="https://rest-apis-typescript-l8lm.onrender.com/docs/"
+      style={{
+        width: "100%",
+        height: "100%",
+        border: "none",
+        overflow: "hidden",
+      }}
+      title="Documentación"
+    />
+  </div>
+);
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -48,6 +63,10 @@ export const router = createBrowserRouter([
       {
         path: "contacto",
         element: <Contact />,
+      },
+      {
+        path: "docs",
+        element: <Docs />,
       },
     ],
   },
