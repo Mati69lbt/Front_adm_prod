@@ -34,7 +34,7 @@ const NewProduct = () => {
         <h2 className="text-4xl font-black text-slate-500">Nuevo Producto</h2>
         <Link
           to={"/productos"}
-          className="rounded-md bg-indigo-600 p-3 text-sm font-bold text-white shadow-sm hover:bg-indigo-500"
+          className="rounded-md bg-indigo-600 p-3 text-sm font-bold text-white shadow-sm hover:bg-indigo-500 text-center"
         >
           Volver a Productos
         </Link>

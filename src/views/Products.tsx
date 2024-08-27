@@ -23,23 +23,25 @@ const Products = () => {
 
   return (
     <>
-      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+      <div className="flex flex-col justify-between items-start">
         <h2 className="text-4xl font-black text-slate-500">Productos</h2>
         <Link
           to={"nuevo"}
-          className="mt-4 sm:mt-0 rounded-md bg-indigo-600 p-3 text-sm font-bold text-white shadow-sm hover:bg-indigo-500"
+          className="mt-4 rounded-md bg-indigo-600 p-3 text-sm font-bold text-white shadow-sm hover:bg-indigo-500"
         >
           Agregar Producto
         </Link>
       </div>
-      <div className="p-2 overflow-x-auto">
-        <table className="w-full mt-5 table-auto">
+      <div className="p-1 overflow-x-auto">
+        <table className="w-full sm:min-w-full mt-5 table-auto">
           <thead className="bg-slate-800 text-white">
             <tr>
-              <th className="p-2 text-left">Producto</th>
-              <th className="p-2 text-left">Precio</th>
-              <th className="p-2 text-left">Disponibilidad</th>
-              <th className="p-2 text-left">Acciones</th>
+              <th className="p-2 text-left text-xs sm:text-base">Producto</th>
+              <th className="p-2 text-left text-xs sm:text-base">Precio</th>
+              <th className="p-2 text-left text-xs sm:text-base">
+                Disponibilidad
+              </th>
+              <th className="p-2 text-left text-xs sm:text-base">Acciones</th>
             </tr>
           </thead>
           <tbody>
