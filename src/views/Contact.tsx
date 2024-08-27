@@ -4,11 +4,14 @@ const Contact = () => {
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-xl w-full">
         <h1 className="text-2xl font-bold mb-6 text-center">Contacto</h1>
         <p className="mb-4 text-center">
-          Hola, soy Matías Delgado, desarrollador full stack. <br />
-          Vivo en Paraná, Entre Ríos, Argentina.
+          Hola, soy Matías Delgado
+          <br /> desarrollador full stack. Vivo en Paraná, Entre Ríos,
+          <br />
+          Argentina.
         </p>
         <p className="mb-4 text-center">
-          Para contactarme, puedes enviarme un correo a:
+          Para contactarme, puedes enviarme <br />
+          un correo a:
         </p>
         <p className="text-center text-lg font-semibold mb-8">
           <a
@@ -19,7 +22,8 @@ const Contact = () => {
           </a>
         </p>
         <p className="text-center text-gray-600">
-          También puedes encontrar más información sobre mí en mi{" "}
+          También puedes encontrar más información <br />
+          sobre mí en mi{" "}
           <a
             href="https://mdelgado.netlify.app/"
             className="text-blue-600 hover:underline"
