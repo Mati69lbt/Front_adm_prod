@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+# Proyecto CRUD para Artículos de Computación
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación CRUD para gestionar artículos de computación, desarrollada con **React** y utilizando una moderna pila tecnológica que incluye **TypeScript**, **Vite** y **TailwindCSS**. La aplicación permite crear, leer, actualizar y eliminar artículos, proporcionando una interfaz de usuario intuitiva y eficiente.
 
-Currently, two official plugins are available:
+## Tecnologías Principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Para construir la interfaz de usuario.
+- **TypeScript**: Para un desarrollo tipado y más robusto.
+- **Vite**: Como herramienta de construcción y servidor de desarrollo rápido.
+- **TailwindCSS**: Para estilos consistentes y personalizados.
+- **Axios**: Para manejar las solicitudes HTTP hacia el backend.
+- **React Router DOM**: Para la navegación dentro de la aplicación.
+- **Valibot**: Para la validación de esquemas de datos.
+- **ESLint**: Para asegurar la calidad del código con reglas de linting.
 
-## Expanding the ESLint configuration
+Esta aplicación está diseñada para ser eficiente y fácil de usar, con un enfoque en la organización y gestión de inventario de productos de computación. Está en constante desarrollo, con planes para agregar nuevas características y optimizar su rendimiento.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Scripts
 
-- Configure the top-level `parserOptions` property like this:
+- **`dev`**: Inicia el servidor de desarrollo con Vite.
+  
+- **`build`**: Compila el código TypeScript y genera la versión de producción.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **`lint`**: Ejecuta ESLint para analizar el código y verificar su calidad.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **`preview`**: Sirve la aplicación construida para una vista previa local.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Estructura del Proyecto
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+```plaintext
+src/
+├── components/
+│   ├── ErrorMsg.tsx
+│   └── ProductDetails.tsx
+├── layouts/
+│   └── Layout.tsx
+├── services/
+│   └── ProductService.ts
+├── types/
+│   └── index.ts
+├── views/
+│   ├── Contact.tsx
+│   ├── EditProducts.tsx
+│   ├── Home.tsx
+│   ├── NewProduct.tsx
+│   └── Products.tsx
+├── index.css
+├── main.tsx
+├── router.tsx
+└── vite-env.d.ts
